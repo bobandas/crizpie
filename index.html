@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crizpie</title>
+</head>
+<body>
+    <div class="error-500" data-text="Welcome! CRIZPIE.com is Now Under construction ! Keep your mind and Waiting for update.....">
+        <spaguetti>
+        <fork></fork>
+        <meat></meat>
+        <pasta></pasta>
+        <plate></plate>
+      </spaguetti>
+    </div>
+    <div id="footer">
+      <h6 >Devoloped by Boban Grandframe</h6>
+    </div>
+</body>
+<script>
+    const error = document.querySelector(".error-500");
+let i = 0, data = "", text = error.getAttribute("data-text");
+
+let typing = setInterval(() => {
+  if(i == text.length){
+    clearInterval(typing);
+  }else{
+    data += text[i];
+    document.querySelector(".error-500").setAttribute("data-text", data);
+    i++;
+  }
+}, 100);
+</script>
+</html>
