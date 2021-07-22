@@ -50,6 +50,33 @@ body{
 	font-size:13px;
 	color: #c2c2a3 !important;
 	}
+	@media (max-width: 767px) {
+		.banner{
+			width:100%;
+			padding: 0px 0px 1px;
+			background: #343a40;
+		   
+			
+			}
+			
+			.banner span{
+			margin:0 10px;
+			}
+			
+			.banner .content_right{
+			float:right;
+			}
+			
+			.banner span a{
+			display:inline-block;
+			margin:0 10px;
+			font-size:9px;
+			color: #c2c2a3 !important;
+			}
+
+
+	 }
+
 	
 /* #Navigation
 ================================================== */
